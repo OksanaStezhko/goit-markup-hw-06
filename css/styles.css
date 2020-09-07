@@ -126,7 +126,7 @@ img {
 }
 
 /* Общее шапка и подвал */
-.primary,
+/* .primary, */
 .footer {
   background-color: var(--bgd-header-footer);
 }
@@ -169,16 +169,17 @@ img {
 /* Правый марджин между логотипом и ссылками на страницы в основном nav */
 .studio-nav .logo {
   margin-right: 93px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+}
+
+.studio-nav {
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.studio-nav {
-  align-items: baseline;
-}
-
 .studio-list-page {
-  padding-bottom: 32px;
 }
 /* Правые марджины внутри списков из nav и списка контактов */
 .studio-list-page > .item:not(:last-child),
@@ -252,7 +253,7 @@ img {
 .link.current::after {
   position: relative;
   left: 0;
-  top: 32px;
+  top: 30px;
 
   content: '';
   display: block;
@@ -359,9 +360,10 @@ img {
 .activity-label {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 27px 0px;
-  width: 100%;
+  width: 370px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -545,6 +547,7 @@ img {
 
 /* Марджины и паддинги для списка фильтров в верхней части секции Портфолио*/
 .portfolio-filter {
+  display: inline-flex;
   margin-bottom: 34px;
   margin-right: auto;
   margin-left: auto;
@@ -554,10 +557,12 @@ img {
   justify-content: center;
 }
 
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* Кнопки-фильтры в портфолио  */
 .portfolio-filter .button {
-  align-items: flex-start;
-  margin-right: 8px;
   padding: 6px 22px;
 
   color: var(--text-header);
@@ -602,12 +607,14 @@ img {
 
 /* Тень при ховере на карточках-ссылках портфолио */
 .portfolio-link {
-  width: 370px;
-  border: 1px solid transparent;
+  display: block;
+  /* width: 370px; */
+  border: 1px solid var(--bgd-border);
 }
 
 .portfolio-card-image {
   position: relative;
+  justify-content: center;
   height: 294px;
   overflow: hidden;
 }
@@ -618,8 +625,8 @@ img {
   left: 0;
   content: '';
   padding: 63px 24px;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
 
   font-weight: normal;
   font-size: 18px;
@@ -660,10 +667,6 @@ img {
 /* Бордер с трех сторон контейнера с текстом под имиджем карточек портфолио */
 .portfolio-card-title {
   padding: 20px 24px;
-
-  border-right: 1px solid var(--bgd-border);
-  border-bottom: 1px solid var(--bgd-border);
-  border-left: 1px solid var(--bgd-border);
   text-align: start;
 }
 
@@ -692,7 +695,7 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .backdrop .modal {
