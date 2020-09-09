@@ -174,9 +174,11 @@ img {
 }
 
 /* Правые марджины внутри списков из nav и списка контактов */
-.studio-list-page > .item:not(:last-child),
-.studio-list-contacts > .item:not(:last-child) {
+.studio-list-page > .item:not(:last-child) {
   margin-right: 50px;
+}
+.studio-list-contacts > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Логотип в хедере*/
