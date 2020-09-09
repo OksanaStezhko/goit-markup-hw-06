@@ -339,6 +339,7 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  border-radius: 4px;
 }
 .features-icon {
   width: 70px;
@@ -546,7 +547,6 @@ img {
 .footer .social-link {
   background-color: var(--bgd-footer-icon);
   fill: var(--text-white);
-  align-items: center;
   transition: background-color var(--time) var(--time-function);
 }
 .footer .social-link:hover,
