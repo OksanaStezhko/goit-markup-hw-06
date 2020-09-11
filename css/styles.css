@@ -243,7 +243,6 @@ img {
 .studio-list-contacts .link:hover,
 .studio-list-contacts .link:focus {
   color: var(--text-accent);
-  outline: none;
 }
 .studio-list-contacts .link:hover .contact-mail-icon,
 .studio-list-contacts .link:focus .contact-mail-icon,
@@ -311,7 +310,6 @@ img {
 .primary .button:hover,
 .primary .button:focus {
   background-color: var(--bgd-button-hover);
-  outline: none;
 }
 
 /* Секция Особенности */
@@ -458,7 +456,6 @@ img {
 .team .social-link:focus {
   background-color: var(--bgd-accent);
   fill: var(--text-white);
-  outline: none;
 }
 
 /* Секция Постоянные клиенты */
@@ -486,7 +483,6 @@ img {
 .client-link:focus {
   fill: var(--bgd-accent);
   border: 1px solid var(--bgd-accent);
-  outline: none;
 }
 .clients .title {
   margin-bottom: 50px;
@@ -554,7 +550,6 @@ img {
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--bgd-accent);
-  outline: none;
 }
 
 /* Марджины и паддинги для списка фильтров в верхней части секции Портфолио*/
@@ -599,7 +594,6 @@ img {
   background-color: var(--bgd-accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: none;
 }
 
 /* Правый марджин для сетки многострочного контейнера, исключаем каждый третий */
@@ -655,7 +649,6 @@ img {
   border: 1px solid var(--bgd-border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
 }
 
 .portfolio-link:hover .portfolio-card-overley,
