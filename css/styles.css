@@ -214,17 +214,8 @@ img {
 }
 
 /* Иконки в хедере */
-.contact-mail-icon {
+.contact-icon {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  fill: var(--text-main);
-  transition: fill var(--time) var(--time-function);
-}
-.contact-tell-icon {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
   fill: var(--text-main);
   transition: fill var(--time) var(--time-function);
 }
@@ -244,10 +235,8 @@ img {
 .studio-list-contacts .link:focus {
   color: var(--text-accent);
 }
-.studio-list-contacts .link:hover .contact-mail-icon,
-.studio-list-contacts .link:focus .contact-mail-icon,
-.studio-list-contacts .link:hover .contact-tell-icon,
-.studio-list-contacts .link:focus .contact-tell-icon {
+.studio-list-contacts .link:hover .contact-icon,
+.studio-list-contacts .link:focus .contact-icon {
   fill: var(--text-accent);
 }
 
