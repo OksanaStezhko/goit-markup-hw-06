@@ -163,14 +163,22 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-/* Правый марджин между логотипом и ссылками на страницы в основном nav */
-.studio-nav .logo {
-  margin-right: 93px;
-}
 
 .studio-nav {
   align-items: center;
+}
+
+/* Логотип в хедере */
+.studio-nav .logo {
+  margin-right: 93px;
   padding: 24px 0px 25px;
+}
+
+/* Общие параметры для двух списков верхней линии */
+.studio-list-page,
+.studio-list-contacts {
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 /* Правые марджины внутри списков из nav и списка контактов */
@@ -218,20 +226,6 @@ img {
   padding: 32px 0px;
 }
 
-/* Иконки в хедере */
-.contact-icon {
-  margin-right: 10px;
-  fill: var(--text-main);
-  transition: fill var(--time) var(--time-function);
-}
-
-/* Общие параметры для двух списков верхней линии */
-.studio-list-page,
-.studio-list-contacts {
-  letter-spacing: 0.02em;
-  font-weight: 500;
-}
-
 /*  hover и focus для ссылок навигации по сайту*/
 .link.current,
 .studio-list-page .link:hover,
@@ -239,6 +233,13 @@ img {
 .studio-list-contacts .link:hover,
 .studio-list-contacts .link:focus {
   color: var(--text-accent);
+}
+
+/* Иконки в хедере */
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--text-main);
+  transition: fill var(--time) var(--time-function);
 }
 .studio-list-contacts .link:hover .contact-icon,
 .studio-list-contacts .link:focus .contact-icon {
@@ -381,9 +382,6 @@ img {
 .team > .container > .title {
   margin-bottom: 50px;
 }
-.team-card-image {
-  justify-content: center;
-}
 
 /* Карточка Наша команда */
 .team-card {
@@ -399,6 +397,10 @@ img {
 
 .team-card:not(:nth-child(4n)) {
   margin-right: 30px;
+}
+
+.team-card-image {
+  justify-content: center;
 }
 
 /*Раздел с текстом под фото в карточке Наша команда  */
@@ -478,6 +480,7 @@ img {
   fill: var(--bgd-accent);
   border: 1px solid var(--bgd-accent);
 }
+
 .clients .title {
   margin-bottom: 50px;
 }
