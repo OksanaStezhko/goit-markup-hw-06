@@ -166,11 +166,11 @@ img {
 /* Правый марджин между логотипом и ссылками на страницы в основном nav */
 .studio-nav .logo {
   margin-right: 93px;
-  padding: 24px 0px 25px;
 }
 
 .studio-nav {
   align-items: center;
+  padding: 24px 0px 25px;
 }
 
 /* Правые марджины внутри списков из nav и списка контактов */
@@ -211,6 +211,11 @@ img {
   align-items: center;
   transition: background-color var(--time) var(--time-function),
     color var(--time) var(--time-function);
+}
+/* Паддинги на ссылках для расширения области реагирования на ховер */
+.studio-list-page .link,
+.studio-list-contacts .link {
+  padding: 32px 0px;
 }
 
 /* Иконки в хедере */
